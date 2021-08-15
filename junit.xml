@@ -1,6 +1,6 @@
-<testsuites name="jest tests" tests="6" failures="6" time="1.687">
-  <testsuite name="Hacker Dormitory" errors="0" failures="6" skipped="0" timestamp="2021-08-15T21:27:49" time="1.687" tests="6">
-    <testcase classname="Hacker Dormitory should add valid students in Residents list" name="Hacker Dormitory should add valid students in Residents list" time="0.073">
+<testsuites name="jest tests" tests="6" failures="6" time="1.195">
+  <testsuite name="Hacker Dormitory" errors="0" failures="6" skipped="0" timestamp="2021-08-15T21:31:54" time="1.195" tests="6">
+    <testcase classname="Hacker Dormitory should add valid students in Residents list" name="Hacker Dormitory should add valid students in Residents list" time="0.075">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -57,8 +57,7 @@
     at new Promise (&lt;anonymous&gt;)
     at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
     at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    at &lt;anonymous&gt;</failure>
       <failure>TypeError: Cannot read property &apos;children&apos; of undefined
     at Object.it (/projects/challenge/src/App.test.js:39:17)
     at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
@@ -66,8 +65,7 @@
     at new Promise (&lt;anonymous&gt;)
     at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
     at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    at &lt;anonymous&gt;</failure>
     </testcase>
     <testcase classname="Hacker Dormitory should add valid students without case sensitivity" name="Hacker Dormitory should add valid students without case sensitivity" time="0.016">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
@@ -126,8 +124,7 @@
     at new Promise (&lt;anonymous&gt;)
     at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
     at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    at &lt;anonymous&gt;</failure>
       <failure>TypeError: Cannot read property &apos;children&apos; of undefined
     at Object.it (/projects/challenge/src/App.test.js:53:17)
     at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
@@ -135,8 +132,7 @@
     at new Promise (&lt;anonymous&gt;)
     at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
     at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    at &lt;anonymous&gt;</failure>
     </testcase>
     <testcase classname="Hacker Dormitory should clear the input fields after adding a new student" name="Hacker Dormitory should clear the input fields after adding a new student" time="0.016">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
@@ -195,8 +191,7 @@
     at new Promise (&lt;anonymous&gt;)
     at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
     at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    at &lt;anonymous&gt;</failure>
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: &quot;&quot;
@@ -207,10 +202,9 @@ Received: &quot;Adam&quot;
     at new Promise (&lt;anonymous&gt;)
     at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
     at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    at &lt;anonymous&gt;</failure>
     </testcase>
-    <testcase classname="Hacker Dormitory should show error on trying to add a student who is not in the list" name="Hacker Dormitory should show error on trying to add a student who is not in the list" time="0.018">
+    <testcase classname="Hacker Dormitory should show error on trying to add a student who is not in the list" name="Hacker Dormitory should show error on trying to add a student who is not in the list" time="0.014">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -267,8 +261,7 @@ Received: &quot;Adam&quot;
     at new Promise (&lt;anonymous&gt;)
     at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
     at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    at &lt;anonymous&gt;</failure>
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: &quot;Sorry, Anderson is not a verified student!&quot;
@@ -279,10 +272,9 @@ Received: &quot;Anderson, Not a verified student&quot;
     at new Promise (&lt;anonymous&gt;)
     at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
     at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    at &lt;anonymous&gt;</failure>
     </testcase>
-    <testcase classname="Hacker Dormitory should show error on trying to add a student whose validity has expired" name="Hacker Dormitory should show error on trying to add a student whose validity has expired" time="0.012">
+    <testcase classname="Hacker Dormitory should show error on trying to add a student whose validity has expired" name="Hacker Dormitory should show error on trying to add a student whose validity has expired" time="0.013">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -339,8 +331,7 @@ Received: &quot;Anderson, Not a verified student&quot;
     at new Promise (&lt;anonymous&gt;)
     at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
     at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    at &lt;anonymous&gt;</failure>
       <failure>Error: Unable to find an element by: [data-testid=&quot;errorMsg&quot;]
 
 &lt;body&gt;
@@ -414,10 +405,9 @@ Received: &quot;Anderson, Not a verified student&quot;
     at new Promise (&lt;anonymous&gt;)
     at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
     at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    at &lt;anonymous&gt;</failure>
     </testcase>
-    <testcase classname="Hacker Dormitory should hold the correct list and error message after series of Students addition" name="Hacker Dormitory should hold the correct list and error message after series of Students addition" time="0.023">
+    <testcase classname="Hacker Dormitory should hold the correct list and error message after series of Students addition" name="Hacker Dormitory should hold the correct list and error message after series of Students addition" time="0.024">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -474,8 +464,7 @@ Received: &quot;Anderson, Not a verified student&quot;
     at new Promise (&lt;anonymous&gt;)
     at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
     at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    at &lt;anonymous&gt;</failure>
       <failure>Error: Unable to find an element by: [data-testid=&quot;errorMsg&quot;]
 
 &lt;body&gt;
@@ -551,8 +540,7 @@ Received: &quot;Anderson, Not a verified student&quot;
     at new Promise (&lt;anonymous&gt;)
     at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
     at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
-    at &lt;anonymous&gt;
-    at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
+    at &lt;anonymous&gt;</failure>
     </testcase>
   </testsuite>
 </testsuites>
