@@ -23,11 +23,13 @@ function Search() {
   const [joiningDate,setJoiningDate]=useState('')
   const [userCheck,setUserCheck]= useState(false)
   const [validityCheck,setValidityCheck]= useState(false)
+  const [display,setDisplay]=useState(false)
+  const [users,setUsers]=useState([])
 
   
   const handleClick=()=>{
+   setUsers(users=>[...users,name])
    
-    var match= false
     for( var i =0 ;i<students.length;i++ ){
       var tempName = students[i]
       if(name.toLocaleLowerCase()===tempName.name.toLocaleLowerCase()){
@@ -42,13 +44,21 @@ function Search() {
           break
           }
           setUserCheck(true)
-          
-      
+       }
+       if (userCheck&&checkValidity){
      
-    }
+         
+         setDisplay(false)
+       }else{
+         setDisplay(true)
+       }
+       console.log(users)
+      
+  
 
   }
 	return (
+
 		<div>
 			<label htmlFor="studentName">Student Name:
 				<div>
@@ -67,7 +77,7 @@ function Search() {
      
       {userCheck?<Error name={name}/>:<div></div>}
       {validityCheck?<ErrorValidity name={name}/>:<div></div>}
-      {validityCheck&&userCheck?<ResidentsList name={name}/>:<div></div>}
+      {display?<ResidentsList name={users}/>:<div></div>}
 		</div>
 	);
 }

@@ -1,12 +1,15 @@
 import React from 'react';
 
-function ResidentsList() {
+function ResidentsList({name,users}) {
+ 
 	return (
+    
 		<div>
 			<div>Residents List</div>
 			<ul data-testid="residentsNameList">
 				<li key="item1">
-					John
+          {name}
+					
 				</li>
 			</ul>
 		</div>
