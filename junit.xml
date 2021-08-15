@@ -1,6 +1,6 @@
-<testsuites name="jest tests" tests="6" failures="6" time="1.207">
-  <testsuite name="Hacker Dormitory" errors="0" failures="6" skipped="0" timestamp="2021-08-15T21:56:48" time="1.207" tests="6">
-    <testcase classname="Hacker Dormitory should add valid students in Residents list" name="Hacker Dormitory should add valid students in Residents list" time="0.071">
+<testsuites name="jest tests" tests="6" failures="6" time="1.192">
+  <testsuite name="Hacker Dormitory" errors="0" failures="6" skipped="0" timestamp="2021-08-15T22:00:30" time="1.192" tests="6">
+    <testcase classname="Hacker Dormitory should add valid students in Residents list" name="Hacker Dormitory should add valid students in Residents list" time="0.07">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -144,7 +144,7 @@
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
     </testcase>
-    <testcase classname="Hacker Dormitory should clear the input fields after adding a new student" name="Hacker Dormitory should clear the input fields after adding a new student" time="0.016">
+    <testcase classname="Hacker Dormitory should clear the input fields after adding a new student" name="Hacker Dormitory should clear the input fields after adding a new student" time="0.015">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -369,7 +369,7 @@ Received: &quot;sorry,  validity has expired&quot;
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
     </testcase>
-    <testcase classname="Hacker Dormitory should hold the correct list and error message after series of Students addition" name="Hacker Dormitory should hold the correct list and error message after series of Students addition" time="0.025">
+    <testcase classname="Hacker Dormitory should hold the correct list and error message after series of Students addition" name="Hacker Dormitory should hold the correct list and error message after series of Students addition" time="0.022">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
