@@ -52,11 +52,15 @@ function Search() {
        }else{
          setDisplay(true)
        }
-       console.log(users)
-      
-  
+       clear();
+       
+}
+const clear=()=>{
+  setName('')
+  setJoiningDate('')
+}
 
-  }
+
 	return (
 
 		<div>
