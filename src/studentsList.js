@@ -1,4 +1,4 @@
-export const STUDENTS = [
+const students= [
     {
         name: 'John',
         validityDate: '2030-12-30'
@@ -32,3 +32,5 @@ export const STUDENTS = [
         validityDate: '2023-11-11'
     }
 ];
+
+export default students;
