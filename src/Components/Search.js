@@ -28,14 +28,14 @@ function Search() {
 
   
   const handleClick=()=>{
-   setUsers(users=>[...users,name])
+   
    
     for( var i =0 ;i<students.length;i++ ){
       var tempName = students[i]
       if(name.toLocaleLowerCase()===tempName.name.toLocaleLowerCase()){
           var validityDate=tempName.validityDate
           setUserCheck(false)
-          console.log(checkValidity(joiningDate,validityDate))
+          //console.log(checkValidity(joiningDate,validityDate))
           if(checkValidity(joiningDate,validityDate)){
               setValidityCheck(false)
           }else{
@@ -47,10 +47,10 @@ function Search() {
        }
        if (userCheck&&checkValidity){
      
-         
-         setDisplay(false)
-       }else{
+         setUsers(users=>[...users,name])
          setDisplay(true)
+       }else{
+         setDisplay(false)
        }
        clear();
        
@@ -77,11 +77,14 @@ const clear=()=>{
           />
 				</div>
 			</label>
-			<button type="button" data-testid="addBtn" onClick={handleClick}>Add</button>
+			<button style={{backgroundColor:'green'}} type="button" data-testid="addBtn" onClick={handleClick}>Add</button>
      
       {userCheck?<Error name={name}/>:<div></div>}
-      {validityCheck?<ErrorValidity name={name}/>:<div></div>}
-      <div>Residents List</div>
+      {validityCheck?<ErrorValidity  name={name}/>:<div></div>}
+      <br></br>
+      <br></br>
+      <div style={{textAlign:'center', fontWeight:'50px'}}>Residents List</div>
+      
       {display?<ResidentsList name={users}/>:<div></div>}
 		</div>
 	);

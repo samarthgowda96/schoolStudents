@@ -7,7 +7,7 @@ function ResidentsList({name,users}) {
 		<div>
 			
 			<ul data-testid="residentsNameList">
-				<li key="item1">
+				<li key="item1" >
           {name}
 					
 				</li>

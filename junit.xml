@@ -1,6 +1,6 @@
-<testsuites name="jest tests" tests="6" failures="6" time="1.192">
-  <testsuite name="Hacker Dormitory" errors="0" failures="6" skipped="0" timestamp="2021-08-15T22:00:30" time="1.192" tests="6">
-    <testcase classname="Hacker Dormitory should add valid students in Residents list" name="Hacker Dormitory should add valid students in Residents list" time="0.07">
+<testsuites name="jest tests" tests="6" failures="6" time="1.706">
+  <testsuite name="Hacker Dormitory" errors="0" failures="6" skipped="0" timestamp="2021-08-15T22:17:07" time="1.706" tests="6">
+    <testcase classname="Hacker Dormitory should add valid students in Residents list" name="Hacker Dormitory should add valid students in Residents list" time="0.097">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -8,6 +8,7 @@
     &lt;div
       class=&quot;App&quot;
     &gt;
+      &lt;h1 /&gt;
       &lt;div&gt;
         &lt;div&gt;
           &lt;label
@@ -80,6 +81,7 @@
     &lt;div
       class=&quot;App&quot;
     &gt;
+      &lt;h1 /&gt;
       &lt;div&gt;
         &lt;div&gt;
           &lt;label
@@ -144,7 +146,7 @@
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
     </testcase>
-    <testcase classname="Hacker Dormitory should clear the input fields after adding a new student" name="Hacker Dormitory should clear the input fields after adding a new student" time="0.015">
+    <testcase classname="Hacker Dormitory should clear the input fields after adding a new student" name="Hacker Dormitory should clear the input fields after adding a new student" time="0.017">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -152,6 +154,7 @@
     &lt;div
       class=&quot;App&quot;
     &gt;
+      &lt;h1 /&gt;
       &lt;div&gt;
         &lt;div&gt;
           &lt;label
@@ -219,7 +222,7 @@ Received: &quot;Adam&quot;
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
     </testcase>
-    <testcase classname="Hacker Dormitory should show error on trying to add a student who is not in the list" name="Hacker Dormitory should show error on trying to add a student who is not in the list" time="0.013">
+    <testcase classname="Hacker Dormitory should show error on trying to add a student who is not in the list" name="Hacker Dormitory should show error on trying to add a student who is not in the list" time="0.015">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -227,6 +230,7 @@ Received: &quot;Adam&quot;
     &lt;div
       class=&quot;App&quot;
     &gt;
+      &lt;h1 /&gt;
       &lt;div&gt;
         &lt;div&gt;
           &lt;label
@@ -294,7 +298,7 @@ Received: &quot;, Not a verified student&quot;
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
     </testcase>
-    <testcase classname="Hacker Dormitory should show error on trying to add a student whose validity has expired" name="Hacker Dormitory should show error on trying to add a student whose validity has expired" time="0.017">
+    <testcase classname="Hacker Dormitory should show error on trying to add a student whose validity has expired" name="Hacker Dormitory should show error on trying to add a student whose validity has expired" time="0.014">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -302,6 +306,7 @@ Received: &quot;, Not a verified student&quot;
     &lt;div
       class=&quot;App&quot;
     &gt;
+      &lt;h1 /&gt;
       &lt;div&gt;
         &lt;div&gt;
           &lt;label
@@ -377,6 +382,7 @@ Received: &quot;sorry,  validity has expired&quot;
     &lt;div
       class=&quot;App&quot;
     &gt;
+      &lt;h1 /&gt;
       &lt;div&gt;
         &lt;div&gt;
           &lt;label
