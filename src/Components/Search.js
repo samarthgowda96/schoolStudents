@@ -77,6 +77,7 @@ function Search() {
      
       {userCheck?<Error name={name}/>:<div></div>}
       {validityCheck?<ErrorValidity name={name}/>:<div></div>}
+      <div>Residents List</div>
       {display?<ResidentsList name={users}/>:<div></div>}
 		</div>
 	);
