@@ -7,10 +7,10 @@ function ResidentsList({users}) {
 		<div>
 			
 			<ul data-testid="residentsNameList">
-				<li key="item1" >
-          {users}
-					
-				</li>
+        {users.map(item => (
+          <li key = {item.name}>{item.name}</li>
+        ))}
+				
 			</ul>
 		</div>
 	);

@@ -42,9 +42,9 @@ function Search() {
           }else{
               setValidityCheck(true)
           }
-          break
-          }
-          setUserCheck(true)
+        }
+        
+        setUserCheck(true)
        }
       
        if (userCheck&&checkValidity){

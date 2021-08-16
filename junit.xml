@@ -1,6 +1,6 @@
-<testsuites name="jest tests" tests="6" failures="6" time="1.702">
-  <testsuite name="Hacker Dormitory" errors="0" failures="6" skipped="0" timestamp="2021-08-15T22:32:32" time="1.702" tests="6">
-    <testcase classname="Hacker Dormitory should add valid students in Residents list" name="Hacker Dormitory should add valid students in Residents list" time="0.061">
+<testsuites name="jest tests" tests="6" failures="6" time="2.404">
+  <testsuite name="Hacker Dormitory" errors="0" failures="6" skipped="0" timestamp="2021-08-16T03:33:34" time="2.404" tests="6">
+    <testcase classname="Hacker Dormitory should add valid students in Residents list" name="Hacker Dormitory should add valid students in Residents list" time="0.091">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -82,7 +82,7 @@
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
     </testcase>
-    <testcase classname="Hacker Dormitory should add valid students without case sensitivity" name="Hacker Dormitory should add valid students without case sensitivity" time="0.011">
+    <testcase classname="Hacker Dormitory should add valid students without case sensitivity" name="Hacker Dormitory should add valid students without case sensitivity" time="0.016">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -164,7 +164,7 @@
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
     </testcase>
-    <testcase classname="Hacker Dormitory should clear the input fields after adding a new student" name="Hacker Dormitory should clear the input fields after adding a new student" time="0.014">
+    <testcase classname="Hacker Dormitory should clear the input fields after adding a new student" name="Hacker Dormitory should clear the input fields after adding a new student" time="0.029">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -249,7 +249,7 @@ Received: &quot;Adam&quot;
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
     </testcase>
-    <testcase classname="Hacker Dormitory should show error on trying to add a student who is not in the list" name="Hacker Dormitory should show error on trying to add a student who is not in the list" time="0.014">
+    <testcase classname="Hacker Dormitory should show error on trying to add a student who is not in the list" name="Hacker Dormitory should show error on trying to add a student who is not in the list" time="0.019">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -324,7 +324,7 @@ Received: &quot;Adam&quot;
       <failure>Error: expect(received).toEqual(expected) // deep equality
 
 Expected: &quot;Sorry, Anderson is not a verified student!&quot;
-Received: &quot;, is not a verified student&quot;
+Received: &quot;Anderson, is not a verified student&quot;
     at Object.it (/projects/challenge/src/App.test.js:69:31)
     at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
     at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
@@ -334,7 +334,7 @@ Received: &quot;, is not a verified student&quot;
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
     </testcase>
-    <testcase classname="Hacker Dormitory should show error on trying to add a student whose validity has expired" name="Hacker Dormitory should show error on trying to add a student whose validity has expired" time="0.011">
+    <testcase classname="Hacker Dormitory should show error on trying to add a student whose validity has expired" name="Hacker Dormitory should show error on trying to add a student whose validity has expired" time="0.015">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -406,11 +406,87 @@ Received: &quot;, is not a verified student&quot;
     at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
-      <failure>Error: expect(received).toEqual(expected) // deep equality
+      <failure>Error: Found multiple elements by: [data-testid=&quot;errorMsg&quot;]
 
-Expected: &quot;Sorry, Bonnie&apos;s validity has Expired!&quot;
-Received: &quot;sorry,  validity has expired&quot;
-    at Object.it (/projects/challenge/src/App.test.js:83:31)
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;App&quot;
+    &gt;
+      &lt;h2
+        style=&quot;background-color: black; color: green; text-align: center;&quot;
+      &gt;
+        Hacker Dormitory
+      &lt;/h2&gt;
+      &lt;div&gt;
+        &lt;div&gt;
+          &lt;label
+            for=&quot;studentName&quot;
+          &gt;
+            Student Name:
+            &lt;div&gt;
+              &lt;input
+                data-testid=&quot;studentName&quot;
+                id=&quot;studentName&quot;
+                type=&quot;text&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/label&gt;
+          &lt;label
+            for=&quot;joiningDate&quot;
+          &gt;
+            Joining Date:
+            &lt;div&gt;
+              &lt;input
+                data-testid=&quot;joiningDate&quot;
+                id=&quot;joiningDate&quot;
+                type=&quot;date&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/label&gt;
+          &lt;button
+            data-testid=&quot;addBtn&quot;
+            style=&quot;background-color: green;&quot;
+            type=&quot;button&quot;
+          &gt;
+            Add
+          &lt;/button&gt;
+          &lt;div
+            data-testid=&quot;errorMsg&quot;
+            style=&quot;text-align: center; font-weight: 50px;&quot;
+          &gt;
+            Bonnie
+            , is not a verified student
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;div
+              data-testid=&quot;errorMsg&quot;
+              style=&quot;text-align: center; font-weight: 50px;&quot;
+            &gt;
+              sorry, 
+              Bonnie
+               validity has expired
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;br /&gt;
+          &lt;br /&gt;
+          &lt;div
+            style=&quot;text-align: center; font-weight: 50px;&quot;
+          &gt;
+            Residents List
+          &lt;/div&gt;
+          &lt;div /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:46:10)
+    at getMultipleElementsFoundError (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:50:10)
+    at getByTestId (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:86:13)
+    at Object.it (/projects/challenge/src/App.test.js:82:19)
     at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
     at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
     at new Promise (&lt;anonymous&gt;)
@@ -419,7 +495,7 @@ Received: &quot;sorry,  validity has expired&quot;
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
     </testcase>
-    <testcase classname="Hacker Dormitory should hold the correct list and error message after series of Students addition" name="Hacker Dormitory should hold the correct list and error message after series of Students addition" time="0.017">
+    <testcase classname="Hacker Dormitory should hold the correct list and error message after series of Students addition" name="Hacker Dormitory should hold the correct list and error message after series of Students addition" time="0.036">
       <failure>Error: Unable to find an element by: [data-testid=&quot;residentsNameList&quot;]
 
 &lt;body&gt;
@@ -491,11 +567,93 @@ Received: &quot;sorry,  validity has expired&quot;
     at promise.then (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41)
     at &lt;anonymous&gt;
     at process._tickCallback (internal/process/next_tick.js:189:7)</failure>
-      <failure>Error: expect(received).toEqual(expected) // deep equality
+      <failure>Error: Found multiple elements by: [data-testid=&quot;errorMsg&quot;]
 
-Expected: &quot;Sorry, Talisk&apos;s validity has Expired!&quot;
-Received: &quot;sorry,  validity has expired&quot;
-    at Object.it (/projects/challenge/src/App.test.js:101:31)
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;App&quot;
+    &gt;
+      &lt;h2
+        style=&quot;background-color: black; color: green; text-align: center;&quot;
+      &gt;
+        Hacker Dormitory
+      &lt;/h2&gt;
+      &lt;div&gt;
+        &lt;div&gt;
+          &lt;label
+            for=&quot;studentName&quot;
+          &gt;
+            Student Name:
+            &lt;div&gt;
+              &lt;input
+                data-testid=&quot;studentName&quot;
+                id=&quot;studentName&quot;
+                type=&quot;text&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/label&gt;
+          &lt;label
+            for=&quot;joiningDate&quot;
+          &gt;
+            Joining Date:
+            &lt;div&gt;
+              &lt;input
+                data-testid=&quot;joiningDate&quot;
+                id=&quot;joiningDate&quot;
+                type=&quot;date&quot;
+              /&gt;
+            &lt;/div&gt;
+          &lt;/label&gt;
+          &lt;button
+            data-testid=&quot;addBtn&quot;
+            style=&quot;background-color: green;&quot;
+            type=&quot;button&quot;
+          &gt;
+            Add
+          &lt;/button&gt;
+          &lt;div
+            data-testid=&quot;errorMsg&quot;
+            style=&quot;text-align: center; font-weight: 50px;&quot;
+          &gt;
+            Talisk
+            , is not a verified student
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;div
+              data-testid=&quot;errorMsg&quot;
+              style=&quot;text-align: center; font-weight: 50px;&quot;
+            &gt;
+              sorry, 
+              Talisk
+               validity has expired
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;br /&gt;
+          &lt;br /&gt;
+          &lt;div
+            style=&quot;text-align: center; font-weight: 50px;&quot;
+          &gt;
+            Residents List
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;ul
+              data-testid=&quot;residentsNameList&quot;
+            &gt;
+              &lt;li /&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:46:10)
+    at getMultipleElementsFoundError (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:50:10)
+    at getByTestId (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:86:13)
+    at Object.it (/projects/challenge/src/App.test.js:100:17)
     at Object.asyncJestTest (/projects/challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
     at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12)
     at new Promise (&lt;anonymous&gt;)
