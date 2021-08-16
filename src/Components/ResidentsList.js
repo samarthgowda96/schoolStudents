@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ResidentsList({name,users}) {
+function ResidentsList({users}) {
  
 	return (
     
@@ -8,7 +8,7 @@ function ResidentsList({name,users}) {
 			
 			<ul data-testid="residentsNameList">
 				<li key="item1" >
-          {name}
+          {users}
 					
 				</li>
 			</ul>

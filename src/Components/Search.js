@@ -28,6 +28,7 @@ function Search() {
 
   
   const handleClick=()=>{
+    setUsers(users=>[...users,name])
    
    
     for( var i =0 ;i<students.length;i++ ){
@@ -45,20 +46,19 @@ function Search() {
           }
           setUserCheck(true)
        }
+      
        if (userCheck&&checkValidity){
+         
      
-         setUsers(users=>[...users,name])
+         
          setDisplay(true)
        }else{
          setDisplay(false)
        }
-       clear();
+       
        
 }
-const clear=()=>{
-  setName('')
-  setJoiningDate('')
-}
+
 
 
 	return (
@@ -85,7 +85,7 @@ const clear=()=>{
       <br></br>
       <div style={{textAlign:'center', fontWeight:'50px'}}>Residents List</div>
       
-      {display?<ResidentsList name={users}/>:<div></div>}
+      {display?<ResidentsList name={name}/>:<div></div>}
 		</div>
 	);
 }
