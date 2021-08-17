@@ -19,74 +19,92 @@ function checkValidity(joiningDate, validityDate) {
 }
 
 function Search() {
+  //declaring all the states
   const [name,setName]=useState('')
   const [joiningDate,setJoiningDate]=useState('')
-  const [userCheck,setUserCheck]= useState(false)
-  const [validityCheck,setValidityCheck]= useState(false)
-  const [display,setDisplay]=useState(false)
+  const [userCheck,setUserCheck]= useState('')
+  const [validityCheck,setValidityCheck]= useState('')
+ 
   const [users,setUsers]=useState([])
 
-  
+
+  //checking all if the user is valid and verified
   const handleClick=()=>{
-    setUsers(users=>[...users,name])
-   
-   
-    for( var i =0 ;i<students.length;i++ ){
-      var tempName = students[i]
+
+  for( var i =0 ;i<students.length;i++ ){
+      let tempName = students[i]
       if(name.toLocaleLowerCase()===tempName.name.toLocaleLowerCase()){
-          var validityDate=tempName.validityDate
-          setUserCheck(false)
-          //console.log(checkValidity(joiningDate,validityDate))
-          if(checkValidity(joiningDate,validityDate)){
-              setValidityCheck(false)
-          }else{
-              setValidityCheck(true)
-          }
+          setUserCheck('valid')
+          break
+      }else{
+        setUserCheck('notvalid')
+      }
+    }
+    for( var i =0 ;i<students.length;i++ ){
+        let temppName = students[i]
+        if(temppName.name.toLocaleLowerCase()===name.toLocaleLowerCase()){
+       
+            var date=temppName.validityDate
+            console.log(date)
+            if(checkValidity(joiningDate,date)){
+              setValidityCheck('valid')
+              break
         }
-        
-        setUserCheck(true)
-       }
+      }else{
+          setValidityCheck('notvalid')
+        }
+        clear()
+
+      }
+
+  //set all the previous users
+  if (userCheck==='valid'&&validityCheck==='valid'){
+      setUsers(users=>[...users,name]) 
       
-       if (userCheck&&checkValidity){
-         
-     
-         
-         setDisplay(true)
-       }else{
-         setDisplay(false)
-       }
-       
-       
-}
-
-
-
-	return (
-
-		<div>
+     }
+    
+  }
+  //clearing out the input fields
+  const clear=()=>{
+      setName('')
+      setJoiningDate('')
+    }
+      
+return (
+  <>
+		<div style={{display:'flex', justifyContent:'center',alignItems:'center',height:'200px'}}>
+      
 			<label htmlFor="studentName">Student Name:
 				<div>
-					<input id="studentName" data-testid="studentName" type="text"
+          <input id="studentName" data-testid="studentName" type="text"
+          onClick={clear}
+          
+          value={name}
           onChange={(e)=>{setName(e.target.value)}}/>
+      
 				</div>
 			</label>
 			<label htmlFor="joiningDate">Joining Date:
 				<div>
-					<input id="joiningDate" data-testid="joiningDate" type="date"
+          <input id="joiningDate" data-testid="joiningDate" type="date"
+          value={joiningDate}
+          
           onChange={(e)=>{setJoiningDate(e.target.value)}}
           />
 				</div>
 			</label>
-			<button style={{backgroundColor:'green'}} type="button" data-testid="addBtn" onClick={handleClick}>Add</button>
+			<button style={{backgroundColor:'green',marginTop:'1em'}} type="button" data-testid="addBtn" onClick={handleClick}>Add</button>
      
-      {userCheck?<Error name={name}/>:<div></div>}
-      {validityCheck?<ErrorValidity  name={name}/>:<div></div>}
+      {userCheck==='notvalid'&&<Error  name={name} userCheck={userCheck}  style={{display:'flex', justifyContent:'center',alignItems:'center',height:'200px'}}/>}
+
+      {validityCheck==='notvalid'&&<ErrorValidity  name={name}/> }
+     
       <br></br>
       <br></br>
-      <div style={{textAlign:'center', fontWeight:'50px'}}>Residents List</div>
-      
-      {display?<ResidentsList name={name}/>:<div></div>}
 		</div>
+    <div style={{textAlign:'center', fontWeight:'50px'}}>Residents List</div>
+    <ResidentsList users={users}/> 
+    </>
 	);
 }
 
