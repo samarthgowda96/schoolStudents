@@ -53,7 +53,7 @@ function Search() {
       }else{
           setValidityCheck('notvalid')
         }
-        clear()
+        
 
       }
 
@@ -62,13 +62,17 @@ function Search() {
       setUsers(users=>[...users,name]) 
       
      }
+     
     
   }
+  
   //clearing out the input fields
+
   const clear=()=>{
       setName('')
       setJoiningDate('')
     }
+   
       
 return (
   <>
